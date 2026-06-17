@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -13,6 +14,12 @@ public class ExpenseService {
 
     public List<Expense> findAll() {
         return expenses;
+    }
+
+    public Optional<Expense> findById(UUID id) {
+        return expenses.stream()
+                .filter(expense -> expense.id().equals(id))
+                .findFirst();
     }
 
     public Expense create(CreateExpenseRequest request) {
