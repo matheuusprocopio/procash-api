@@ -22,10 +22,10 @@ http://localhost:8080/api
 curl -X POST http://localhost:8080/api/expenses \
   -H "Content-Type: application/json" \
   -d '{
-    "description": "Almoço",
-    "amount": 35.90,
-    "date": "2026-06-17",
-    "category": "FOOD"
+    "descricao": "Almoço",
+    "valor": 35.90,
+    "data": "2026-06-17",
+    "categoria": "COMIDA"
   }'
 ```
 

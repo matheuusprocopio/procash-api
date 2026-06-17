@@ -25,10 +25,10 @@ public class ExpenseService {
     public Expense create(CreateExpenseRequest request) {
         Expense expense = new Expense(
                 UUID.randomUUID(),
-                request.description(),
-                request.amount(),
-                request.date(),
-                request.category()
+                request.descricao(),
+                request.valor(),
+                request.data(),
+                request.categoria()
         );
 
         expenses.add(expense);

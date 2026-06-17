@@ -6,9 +6,9 @@ import java.util.UUID;
 
 public record Expense(
         UUID id,
-        String description,
-        BigDecimal amount,
-        LocalDate date,
-        ExpenseCategory category
+        String descricao,
+        BigDecimal valor,
+        LocalDate data,
+        ExpenseCategory categoria
 ) {
 }

@@ -1,11 +1,11 @@
 package com.procash.expense;
 
 public enum ExpenseCategory {
-    FOOD,
-    TRANSPORT,
-    HOUSING,
-    HEALTH,
-    EDUCATION,
-    LEISURE,
-    OTHER
+    COMIDA,
+    TRANSPORTE,
+    MORADIA,
+    SAUDE,
+    EDUCACAO,
+    LAZER,
+    OUTROS
 }

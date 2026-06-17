@@ -9,16 +9,16 @@ import java.time.LocalDate;
 
 public record CreateExpenseRequest(
         @NotBlank
-        String description,
+        String descricao,
 
         @NotNull
         @DecimalMin(value = "0.01")
-        BigDecimal amount,
+        BigDecimal valor,
 
         @NotNull
-        LocalDate date,
+        LocalDate data,
 
         @NotNull
-        ExpenseCategory category
+        ExpenseCategory categoria
 ) {
 }
